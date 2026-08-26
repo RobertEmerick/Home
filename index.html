@@ -1,7 +1,9 @@
 <html lang="en">
+ <!-- base info loaded at launch -->
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="1; url=./Main/base.html">
+    <meta http-equiv="refresh" content="300; url=./Main/base.html">
     <title>Redirecting...</title>
 </head>
 
@@ -14,7 +16,25 @@
         --Grey: #1a1a1a;
         --Purple: #511397;
         --Light-Purple: #8821ff;
-         }
+    }
+    
+    body{
+        background-color: var(--Grey);                                /* Sets Background  */
+        color: var(--white);                                          /* Sets text Colour  */
+       
+        /* Center Text  */
+        display: flex;
+        flex-direction: column; align-items: center; /*Horizontally*/
+        justify-content: center; min-height: 100vh;  /*Vertically*/
+           
+    }
 </style>
 
 <!------------------------- HTML Main Body --------------------------------->
+<body>
+    <p>Redirecting...</p>
+    <p>Click <a href="https://robertemerick.github.io/Home/Main/base.html">Here</a> if not Redirected</p>
+    <!-- figured out how to link properly, just want to get rid of the default graphics -->
+
+</body>
+</html>
