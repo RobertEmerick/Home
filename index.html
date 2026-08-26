@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="4; url=./Main/base.html" >
+    <meta http-equiv="refresh" content="3; url=./Main/base.html">
     <title>Redirecting...</title>
 </head>
 
@@ -33,13 +33,27 @@
 
 </style>
 
+<!--------------------------- Java Script ---------------------------------->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const redirectText = document.getElementById("redirecting");
+        let dots = 0;
+
+        setInterval(() => {
+            dots = (dots + 1) % 4;
+            redirectText.textContent = "Redirecting" + ".".repeat(dots);
+        }, 500);
+    });
+</script>
+
+
 <!------------------------- HTML Main Body --------------------------------->
 <body>
     <div class="base"> 
-        <p><b>Redirecting...</b></p>
-<p>Click <a href="https://robertemerick.github.io/Home/Main/base.html" style="color: oklch(67.327% 0.16696 268.715); text-decoration: none;"><b>Here</b></a> if not automatically redirected</p>       
-<!-- creates a hyperlink within some text with some custom styling -->
+        <p><b id="redirecting">Redirecting</b></p>
+        <p>Click <a href="https://robertemerick.github.io/Home/Main/base.html" style="color: oklch(67.327% 0.16696 268.715); text-decoration: none;"><b>Here</b></a> if not automatically redirected</p>       
+        <!-- creates a hyperlink within some text with some custom styling -->
     </div>  
-    
+
 </body>
 </html>
