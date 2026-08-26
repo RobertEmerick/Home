@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="300; url=./Main/base.html">
+    <meta http-equiv="refresh" content="30; url=./Main/base.html">
     <title>Redirecting...</title>
 </head>
 
@@ -21,20 +21,25 @@
     body{
         background-color: var(--Grey);                                /* Sets Background  */
         color: var(--white);                                          /* Sets text Colour  */
-       
-        /* Center Text  */
+        font-family:  sans-serif, Verdana, arial; 
+    }
+
+    .base{ /* basic centering formating */
         display: flex;
         flex-direction: column; align-items: center; /*Horizontally*/
         justify-content: center; min-height: 100vh;  /*Vertically*/
-           
+        
     }
+
 </style>
 
 <!------------------------- HTML Main Body --------------------------------->
 <body>
-    <p>Redirecting...</p>
-    <p>Click <a href="https://robertemerick.github.io/Home/Main/base.html">Here</a> if not Redirected</p>
-    <!-- figured out how to link properly, just want to get rid of the default graphics -->
-
+    <div class="base"> 
+        <p><b>Redirecting...</b></p>
+        <p>Click <a href="https://robertemerick.github.io/Home/Main/base.html">Here</a> if not automatically redirected</p>
+        <!-- figured out how to link properly, just want to get rid of the default graphics -->
+    </div>  
+    
 </body>
 </html>
