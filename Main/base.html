@@ -11,13 +11,31 @@
 
 <!------------------------- CSS Formatting --------------------------------->
 <style>
-    :root{                       /* Global Colour Vars */
+    :root{/* Global Colour Vars */
         --white: #ffffff;
         --Light-Grey: #3a3a3a;
         --Grey: #1a1a1a;
-        --Purple: #511397;
-        --Light-Purple: #8821ff;
-         }
+        --Primay: #511397;
+        --Light-Primary: #8821ff;
+        --Accent: #959713;
+        --Light-Accent: #e9ff21;
+    }
+    
+    body{
+        background-color: var(--Grey);              /* Sets Background  */
+        color: var(--white);                        /* Sets text Colour  */
+        font-family:  sans-serif, Verdana, arial; 
+        font-size: calc(8x + 1.5vw);
+
+    }
+
+    .base{                                        /* basic centererd format */
+        display: flex;
+        flex-direction: column; align-items: center;  /*Horizontally*/
+        justify-content: center; min-height: 100vh;   /*Vertically*/
+        
+    }
+
 </style>
 
 <!--------------------------- Java Script ----------------------------------->
