@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="2; url=./Main/base.html">
+    <meta http-equiv="refresh" content="200; url=./Main/base.html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- set up to work on a mobile aspect ratio -->
     <title>Redirecting...</title>
 </head>
@@ -15,7 +15,7 @@
         --white: #ffffff;
         --Light-Grey: #3a3a3a;
         --Grey: #1a1a1a;
-        --Primay: #511397;
+        --Primary: #4b128b;
         --Light-Primary: #8821ff;
         --Accent: #959713;
         --Light-Accent: #e9ff21;
@@ -36,6 +36,17 @@
         
     }
 
+    .text-box {
+    background-color: var(--Light-Grey); 
+    padding: 2rem;                       /* Adds space around the text */
+    border-radius: 2rem;                 /* how round are my corners */
+    border: 2px solid var(--Primary);    /* Adds a colored border */
+    max-width: 600px;                    /* Prevents the box from getting too wide */
+    width: 90%;                          /* Keeps it responsive on small phone screens */
+    text-align: center;                  /* Centers the text inside the box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adds a  drop shadow */
+}
+
 </style>
 
 <!--------------------------- Java Script ----------------------------------->
@@ -45,10 +56,12 @@
 <!------------------------- HTML Main Body --------------------------------->
 <body>
     <div class="base"> 
+        <div class="text-box">
         <p><b>Redirecting...</b></p>
-<p>Click <a href="https://robertemerick.github.io/Home/Main/base.html" style="color: oklch(67.327% 0.16696 268.715); text-decoration: none;"><b>Here</b></a> if not automatically redirected</p>       
+        <p>Click <a href="https://robertemerick.github.io/Home/Main/base.html" style="color: oklch(67.327% 0.16696 268.715); text-decoration: none;"><b>Here</b></a> if not automatically redirected</p>       
 <!-- creates a hyperlink within some text with some custom styling -->
-    </div>  
+        </div>  
+    </div>
     
 </body>
 </html>
