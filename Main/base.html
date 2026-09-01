@@ -11,21 +11,23 @@
 
 <!------------------------- CSS Formatting --------------------------------->
 <style>
-    :root{/* Global Colour Vars */
+    :root{                                                /* Global Colour Vars */
         --white: #ffffff;
         --Light-Grey: #3a3a3a;
         --Grey: #1a1a1a;
-        --Primay: #511397;
+        --Primay: #491585;
         --Light-Primary: #8821ff;
         --Accent: #959713;
         --Light-Accent: #e9ff21;
     }
     
     body{
-        background-color: var(--Grey);              /* Sets Background  */
-        color: var(--white);                        /* Sets text Colour  */
+        background-color: var(--Grey);                   /* Sets Background  */
+        color: var(--white);                             /* Sets text Colour  */
         font-family:  sans-serif, Verdana, arial; 
-        font-size: clamp(1rem, 0.8rem + 1.5vw, 1.5rem); /* Clamps and " root em formating instead of calc*/
+        font-size: clamp(1rem, 0.8rem + 1.5vw, 1.3rem); /* min size, scale factor, max size*/
+        margin: 0;                                      /* remove defualt margins */
+        padding: 0;
 
     }
 
@@ -33,8 +35,24 @@
         display: flex;
         flex-direction: column; align-items: center;  /*Horizontally*/
         justify-content: center; min-height: 100vh;   /*Vertically*/
-        
     }
+
+    .header{                                        /* header formating */
+        position: sticky;
+        top: 0;
+        padding: 10px 16px;
+        background: var(--Primay);
+        color: #f1f1f1;
+
+    }
+    .header-home{                                   /* home button formating */
+
+    }
+
+    .header-search{                                      /* search bar formating */
+
+    }
+
 
 </style>
 
@@ -44,6 +62,12 @@
 
 <!------------------------- HTML Main Body --------------------------------->
 <body>
+    <header class="header">
+        <button type="button" class="header-home" onclick="window.location.href='https://github.com/RobertEmerick/Home'">Home</button>       
+         Website Title here
+        <input type="text" class="header-search" placeholder="Search...">    
+    </header>
+
     <div class="base"> 
         <p>base setup just to get the file working<p>
     </div>
